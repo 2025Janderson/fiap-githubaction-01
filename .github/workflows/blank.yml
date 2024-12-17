@@ -6,6 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
+    
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
@@ -22,13 +23,14 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout Code
+      - name: Check Time
       - uses: actions/checkout@v4
     
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Olá, Turma da  disciplina GitHub Action!
+      - name: check current time
+        run: echo "Current time is $(date)"
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
