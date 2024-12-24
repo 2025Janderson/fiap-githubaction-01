@@ -23,7 +23,7 @@ jobs:
         uses: docker/login-action@v3.3.0
         with:
           username: kennedy697
-          password: ${{secrets.SECRETE }}
+          password: ${{secrets.SECRETE }} 
           #ecr: # optional, default is auto
     # Log out from the Docker registry at the end of a job
    # logout: # optional, default is true
