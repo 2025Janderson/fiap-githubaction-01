@@ -1,50 +1,12 @@
-name: CI 
+name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
+  # Triggers the workflow on push or pull request events but only for the "main" and "developer" branches
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main",developer ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs: 
-  teste_job: 
-    name: Executando Teste
-    runs-on: ubuntu-Skip to content
-Navigation Menu
-2025Janderson
-fiap-githubaction-01
-
-Type / to search
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-CI
-Update blank.yml #25
-Jobs
-Run details
-Workflow file for this run
-.github/workflows/blank.yml at c407817
-name: CI 
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "developer" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -57,25 +19,12 @@ jobs:
     steps:
       - name: Step1
         uses: actions/checkout@v4
-      - name: kennedy697
+      - name: Login to Docker
         uses: docker/login-action@v3.3.0
         with:
           username: kennedy697
-          password: ${{secrets.SECRETE }} 
-          #ecr: # optional, default is auto
-    # Log out from the Docker registry at the end of a job
-   # logout: # optional, default is true
+          password: ${{ secrets.SECRETE }} 
+          # ecr: # optional, default is auto
           
-Update blank.yml · 2025Janderson/fiap-githubaction-01@c407817
-    steps:
-      - name: Step1
-        uses: actions/checkout@v4
-      - name: kennedy697
-        uses: docker/login-action@v3.3.0
-        with:
-          username: kennedy697
-          password: ${{secrets.SECRETE }} 
-          #ecr: # optional, default is auto
-    # Log out from the Docker registry at the end of a job
-   # logout: # optional, default is true
-          
+      # Log out from the Docker registry at the end of a job
+      # logout: # optional, default is true
