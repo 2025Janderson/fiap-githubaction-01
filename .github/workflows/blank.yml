@@ -29,7 +29,7 @@ jobs:
         uses: docker/build-push-action@v6.10.0
         with:
          context: .
-         tags: 'latest'
+         tags: 'kennedy697/dockerproketofiap2:latest'
          push: true
         
    
