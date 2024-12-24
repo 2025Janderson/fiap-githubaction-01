@@ -34,7 +34,7 @@ jobs:
           push: true
         
       - name: List files
-        run: ls -la
+        run: ls -la 
         
       # Log out from the Docker registry at the end of a job
       # logout: true # optional, default is true
