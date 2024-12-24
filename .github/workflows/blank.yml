@@ -30,7 +30,6 @@ jobs:
         uses: docker/build-push-action@v6.10.0
         with:
           context: .
-          file: ./Dockerfile
           tags: 'kennedy697/dockerproketofiap2:latest'
           push: true
         
