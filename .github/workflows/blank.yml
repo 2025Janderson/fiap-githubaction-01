@@ -19,10 +19,16 @@ jobs:
     steps:
       - name: Step1
         uses: actions/checkout@v4
+        
       - name: Run a one-line script
         run: echo "Arquitetura. Net!"
-      - name: Step2
+     
+      - name: Step 2
         run: echo "Hello World"  # Corrigido para Hello World
+      
+      - name: Step 3
+        run: echo "Hello World"  # Corrigido para Hello World
+        
       - name: Additional Steps
         run: |
           echo "Add other actions to build,"
