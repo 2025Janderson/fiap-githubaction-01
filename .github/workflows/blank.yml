@@ -28,7 +28,9 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v6.10.0
         with:
-         context: .
+         context: default
+
+         
          file: C:\Users\Janderson\OneDrive - Water School Technology\Desktop\DockerProketo Fiap2\DockerfIle
          tags: 'kennedy697/dockerproketofiap2:latest'
          push: true
