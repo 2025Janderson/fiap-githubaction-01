@@ -31,7 +31,7 @@ jobs:
          context: default
 
          
-         file: C:\Users\Janderson\OneDrive - Water School Technology\Desktop\DockerProketo Fiap2\DockerfIle
+         file: ./Dockerfile
          tags: 'kennedy697/dockerproketofiap2:latest'
          push: true
         
