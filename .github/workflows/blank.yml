@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v6.10.0
         with:
           context: .
-          tags: ' kennedy697/dockerproketofiap2: latast'
+          tags: 'kennedy697/fiap-githubaction-01:tagname'
           push: true
          
       - name: List files
