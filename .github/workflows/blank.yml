@@ -32,7 +32,7 @@ jobs:
           context: .
           tags: ' kennedy697/dockerproketofiap2: latast'
           push: true
-        
+         
       - name: List files
         run: ls -la 
         
